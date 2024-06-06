@@ -1,0 +1,86 @@
+.div1, .div2, .div3,.div4  ,.div5{
+    width: 350px;
+    margin: 50px auto;
+    height: 60px;
+    border: 2px solid orange;
+    overflow: hidden;
+}
+.div1 div, .div2 div, .div3 div, .div4 div, .div5 div{
+    height: 60px;
+    width: 60px;
+    background-color: orange;
+   
+}
+.div1 div{
+    position: relative;
+    animation-name: div1;
+    animation-duration: 3s;
+ animation-iteration-count: infinite;
+ animation-timing-function: linear;
+}
+.div2 div{
+   position: relative;
+    animation: div2 2s steps(4,end) infinite; 
+}
+.div3 div{
+    position: relative;
+    animation: div3 3s infinite;
+    animation-direction: alternate;
+}
+.div4 div{
+    animation-timing-function: linear;
+    position: relative;
+    animation: div4 2s infinite  ;
+}
+.div5 div{
+   
+    
+    animation: div5 3s infinite;
+}
+@keyframes div1 {
+    0%{
+        left: -10px;
+
+    }
+    100%{
+        left: 100%;
+    }
+}
+@keyframes div2 {
+    0%{
+        left: 0;
+    }
+   100%{
+    left: 388px ;
+   }
+}
+@keyframes div3 {
+    0%{
+     left: 0;
+    }
+    100%{
+        left: 83%;
+    }
+}
+@keyframes div4 {
+    0%{
+        left: 0;
+        width: 60px;
+    }
+    50%{
+        left: 40%;
+        width: 120px;
+    }
+    100%{
+        left: 83%;
+        width: 60px;
+    }
+}
+@keyframes div5 {
+    0%{
+        width: 30px;
+    }
+    100%{
+        width: 130%;
+    }
+}
